@@ -1,0 +1,6 @@
+<TargetFramework>net7.0</TargetFramework>
+
+
+//Assets cc
+https://skfb.ly/ow86X  //FPS arm
+<a href="https://www.flaticon.com/free-icons/gun" title="gun icons">Gun icons created by Freepik - Flaticon</a> 

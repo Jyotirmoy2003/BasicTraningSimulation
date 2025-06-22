@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9e87b738d0cd942af31ceeac6c33b0, type: 3}
+  m_Name: DataTable
+  m_EditorClassIdentifier: 
+  Table:
+  - text: "First, let\u2019s learn how to move around in this environment."
+    audioClip: {fileID: 8300000, guid: 713509d67501ebc42867d696ca559077, type: 3}
+  - text: Look over here. This glowing spot is called a teleport point. You can use
+      these to move from one place to another.
+    audioClip: {fileID: 8300000, guid: 9420b7dbac788be438f26b796f5b81d0, type: 3}
+  - text: "To teleport, simply look at the point \u2014 just gaze at it for a moment\u2026
+      and whoosh! You\u2019ll be teleported there."
+    audioClip: {fileID: 8300000, guid: 0647d0ab069f793469b4b3c8667407be, type: 3}
+  - text: "Nice job! There are multiple teleport points in this room. You can move
+      to any of them the same way \u2014 just look and go!"
+    audioClip: {fileID: 8300000, guid: 3c5938be969cde049917f3c54a0ee9e2, type: 3}
+  - text: "Now that you\u2019ve got movement down, let\u2019s learn how to pick up
+      objects."
+    audioClip: {fileID: 8300000, guid: 20e130933744f5949b8dd8f77d3addd4, type: 3}
+  - text: Navigate to the table in front of you.
+    audioClip: {fileID: 8300000, guid: 017757e6a0bf749428a471b423ee20d8, type: 3}
+  - text: "See that glowing object on the table? That\u2019s something you can pick
+      up."
+    audioClip: {fileID: 8300000, guid: 46c27cf57ed24314dbb67a49a61d1ed5, type: 3}
+  - text: "To pick it up, just look at it. That\u2019s it! Just focus your gaze."
+    audioClip: {fileID: 8300000, guid: 622fc943c9aadc745972470aef2b364d, type: 3}
+  - text: "Awesome! Now to drop the object, simply look down \u2014 to the drop zone,
+      just below your neck."
+    audioClip: {fileID: 8300000, guid: 966f5a425952ab64291f4e62c4974247, type: 3}
+  - text: "Whenever you drop an object, it returns to its original spot. So don\u2019t
+      worry \u2014 you can always find it again!"
+    audioClip: {fileID: 8300000, guid: 1e1ec4ff6ea4a134e8af60a41a4f000f, type: 3}
+  - text: "Now let\u2019s try picking up the highlighted object nearby."
+    audioClip: {fileID: 8300000, guid: d08fe95698a1ce24885f4ce539c5763c, type: 3}
+  - text: "Great! Now make your way to the highlighted area where we\u2019ll place
+      it."
+    audioClip: {fileID: 8300000, guid: afc4ca63f1fe86f4290bef31e3bdd5cd, type: 3}
+  - text: To place the object, simply look at the highlighted spot while holding
+      it. Easy, right?
+    audioClip: {fileID: 8300000, guid: 2ec55b3a6a684a947817d20ceecc6264, type: 3}
+  - text: "Excellent work, Explorer! You now know how to move, pick up, and place
+      objects. You\u2019re ready to go!"
+    audioClip: {fileID: 8300000, guid: b52fe1425d0c6aa45b7fd80a73e6fe42, type: 3}
