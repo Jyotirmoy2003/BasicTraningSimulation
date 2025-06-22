@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class InteractBase : MonoBehaviour, IInteractable
 {
+    private bool caninteractStatus = false;
     public bool canInteract = true;
     [HideInInspector] public bool b_keepFilling = false;
     public Image sliderImage;
@@ -13,7 +14,7 @@ public class InteractBase : MonoBehaviour, IInteractable
 
     void Start()
     {
-        if(uiParent)uiParent.SetActive(false);
+        if (uiParent) uiParent.SetActive(false);
     }
 
     public virtual void OnInteract()
@@ -23,7 +24,7 @@ public class InteractBase : MonoBehaviour, IInteractable
 
     public virtual void OnPointerEnter()
     {
-        if (canInteract)
+        if (caninteractStatus)
         {
             b_keepFilling = true;
             StartCoroutine(FillButton());
@@ -63,7 +64,7 @@ public class InteractBase : MonoBehaviour, IInteractable
 
     public void ListenToChapterStart()
     {
-        canInteract = true;
+        caninteractStatus = canInteract;
     }
 
     public void ListenToChapterEnd()
@@ -76,6 +77,6 @@ public class InteractBase : MonoBehaviour, IInteractable
         EventManager.OnChapterEndEvent += ListenToChapterEnd;
         EventManager.OnChapterStartEvent += ListenToChapterStart;
 
-        canInteract = true;
+        
     }
 }

@@ -4,6 +4,7 @@ public class PlayerInteractionManager : MonoBehaviour
 {
     public Camera mainCamera;
     public float interactionDistance = 5f;
+    [SerializeField] LayerMask ignoreLayers;
 
     private IInteractable currentInteractable;
 
@@ -12,7 +13,7 @@ public class PlayerInteractionManager : MonoBehaviour
         Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, interactionDistance))
+        if (Physics.Raycast(ray, out hit, interactionDistance,~ignoreLayers))
         {
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
 

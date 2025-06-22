@@ -9,8 +9,8 @@ public class PickupManager : MonoSingleton<PickupManager>
     [SerializeField] Transform rightHandPos;
 
 
-    private PickupBase leftGrabedObject;
-    private PickupBase rightGrabedObject;
+    public PickupBase leftGrabedObject;
+    public PickupBase rightGrabedObject;
 
 
     void Start()

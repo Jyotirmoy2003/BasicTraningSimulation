@@ -126,6 +126,7 @@ MonoBehaviour:
   sliderImage: {fileID: 1498989994150571815}
   uiParent: {fileID: 4189784177987932428}
   filledAmount: 0
+  itemId: -1
   rb: {fileID: 5778665559672280576}
   sliderImageForGrab: {fileID: 1498989994150571815}
   canPick: 1
@@ -319,18 +320,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8f93588a6c6cd6645ae7dd7882dcc319,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f93588a6c6cd6645ae7dd7882dcc319,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f93588a6c6cd6645ae7dd7882dcc319,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8f93588a6c6cd6645ae7dd7882dcc319,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f93588a6c6cd6645ae7dd7882dcc319,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.206
+      value: 2.71
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f93588a6c6cd6645ae7dd7882dcc319,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f93588a6c6cd6645ae7dd7882dcc319,
         type: 3}

@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6cd397a16d0fd49bc8681968d247f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canInteract: 0
+  canInteract: 1
   b_keepFilling: 0
   sliderImage: {fileID: 774626319169085594}
   uiParent: {fileID: 2605446182780903089}

@@ -4,6 +4,7 @@ public class PlayerUIInteractionManager : MonoBehaviour
 {
     public Camera mainCamera;
     public float rayDistance = 5f;
+    [SerializeField] LayerMask ignoreLayers;
     private IUI currentUI;
 
     void Update()
@@ -11,7 +12,7 @@ public class PlayerUIInteractionManager : MonoBehaviour
         Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, rayDistance))
+        if (Physics.Raycast(ray, out hit, rayDistance,~ignoreLayers))
         {
             IUI ui = hit.collider.GetComponent<IUI>();
             
