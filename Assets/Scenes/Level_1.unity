@@ -67,9 +67,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -8984,7 +8981,7 @@ MonoBehaviour:
   - {fileID: 100557850}
   - {fileID: 1112430763}
   - {fileID: 938673516}
-  TaskStartIndex: 8
+  TaskStartIndex: 1
   ModuleEndIndex: 13
   isSequencialFlow: 1
   isChapterInProgress: 0
@@ -9943,7 +9940,7 @@ PrefabInstance:
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.251
       objectReference: {fileID: 0}
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
@@ -18382,7 +18379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1552398866
 Transform:
   m_ObjectHideFlags: 0
@@ -19747,7 +19744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1625944227
 Transform:
   m_ObjectHideFlags: 0
@@ -20315,7 +20312,7 @@ PrefabInstance:
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.251
       objectReference: {fileID: 0}
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
@@ -22296,7 +22293,7 @@ PrefabInstance:
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.251
       objectReference: {fileID: 0}
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
@@ -25002,7 +24999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8c432387b317348a4fd2fb886da689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactBases: []
   initTime: 3
 --- !u!1001 &2070767775
 PrefabInstance:
@@ -26584,17 +26580,17 @@ PrefabInstance:
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.79
+      value: -5.807
       objectReference: {fileID: 0}
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.251
       objectReference: {fileID: 0}
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.55
+      value: -6.032
       objectReference: {fileID: 0}
     - target: {fileID: 2581325447028284178, guid: 8ccbbcd0d5c7de04b882e1afe9b41b12,
         type: 3}
@@ -26727,7 +26723,7 @@ PrefabInstance:
     - target: {fileID: 1942035012519432724, guid: aefbc2645c05e7748a9cc2b41374e758,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.22
+      value: -4.51
       objectReference: {fileID: 0}
     - target: {fileID: 1942035012519432724, guid: aefbc2645c05e7748a9cc2b41374e758,
         type: 3}
