@@ -19,7 +19,7 @@ public class InteractBase : MonoBehaviour, IInteractable
 
     public virtual void OnInteract()
     {
-
+        if (uiParent) uiParent.SetActive(false);
     }
 
     public virtual void OnPointerEnter()
@@ -77,6 +77,12 @@ public class InteractBase : MonoBehaviour, IInteractable
         EventManager.OnChapterEndEvent += ListenToChapterEnd;
         EventManager.OnChapterStartEvent += ListenToChapterStart;
 
-        
+
+    }
+
+    public void ToggleInteract(bool val)
+    {
+        caninteractStatus = val;
+        canInteract = val;
     }
 }

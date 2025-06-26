@@ -12,11 +12,12 @@ public class PlaceTrigger : InteractBase
 
     public void EnableTrigger(bool enable)
     {
-        canInteract = enable;
+        ToggleInteract(enable);
     }
 
     public override void OnInteract()
     {
+        base.OnInteract();
         switch (intendedHand)
         {
             case E_hand.Lefthand:

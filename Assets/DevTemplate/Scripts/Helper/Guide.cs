@@ -111,6 +111,10 @@ public class Guide : MonoBehaviour
     {
         myTransform.LeanMove(movePos, time).setOnComplete(OnMoveDone);
     }
+    public void MoveTo(Vector3 movePos)
+    {
+        myTransform.LeanMove(movePos,  Vector3.Distance(myTransform.position, movePos)).setOnComplete(OnMoveDone);
+    }
     void OnMoveDone() => AC_ReachedToDest?.Invoke();
 
     public void MoveBackToOriginalpos()
