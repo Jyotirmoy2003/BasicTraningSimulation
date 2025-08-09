@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class InteractBase : MonoBehaviour, IInteractable
 {
+    [Header("GrabObject Settings")]
     private bool caninteractStatus = false;
+    [Tooltip("From how far player can interact with it")]
+    [Range(1f,10f)]
+    public float interactDistance = 3f;
     public bool canInteract = true;
     [HideInInspector] public bool b_keepFilling = false;
     public Image sliderImage;
@@ -78,6 +82,11 @@ public class InteractBase : MonoBehaviour, IInteractable
         EventManager.OnChapterStartEvent += ListenToChapterStart;
 
 
+    }
+
+    public virtual float GetInteractDestance()
+    {
+        return interactDistance;
     }
 
     public void ToggleInteract(bool val)

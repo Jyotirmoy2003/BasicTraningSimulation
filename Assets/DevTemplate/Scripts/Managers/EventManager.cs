@@ -7,6 +7,8 @@ public class EventManager : MonoSingleton<EventManager>
 {
     public static Action OnChapterStartEvent;
     public static Action OnChapterEndEvent;
+    public static Action Init;
+
     public Action<TeleportPoint> AC_OnTeleportDone;
     public Action AC_OnTeleportInitate;
     public static Action<PickupBase> AC_ObjectDropped;

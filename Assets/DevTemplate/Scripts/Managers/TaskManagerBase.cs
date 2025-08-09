@@ -23,6 +23,8 @@ public class TaskManagerBase : MonoBehaviour
     [SerializeField] GameObject taskUi;
     [SerializeField] TMP_Text instructionText;
 
+    
+
 
     private int curentTaskIndex = 0;
 
@@ -77,7 +79,7 @@ public class TaskManagerBase : MonoBehaviour
 
     public void ChapterEnd()
     {
-        if (!isChapterInProgress) EventManager.OnChapterEndEvent?.Invoke();
+        if (isChapterInProgress) EventManager.OnChapterEndEvent?.Invoke();
         isChapterInProgress = false;
 
         //Play end audio

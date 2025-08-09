@@ -1,71 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
-using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 public class UIManager : MonoSingleton<UIManager>
 {
     [SerializeField] GameObject UiContainer;
-    [Header("Lap UI")]
-    [SerializeField] Slider lapSlider;
+    [SerializeField] CanvasGroup blackScreenGroup;
+    [SerializeField] float fadeTime = 0.3f;
 
-    [Header("GunUI")]
-    [SerializeField] Image gunIcon;
-    [SerializeField] TMP_Text ammoText;
 
 
     void Start()
     {
-
+        EventManager.Init += BlackScreenFadeOut;
     }
-
-    #region GUN
-    public void SetAmmo(int ammo)
-    {
-        ammoText.text = ammo.ToString();
-    }
-
-    public void SetGunReloadin(bool isReloadin)
-    {
-        if (isReloadin)
-        {
-            gunIcon.color = Color.red;
-        }
-        else
-        {
-            gunIcon.color = Color.white;
-        }
-    }
-    #endregion
-
-
-
-    #region LAP
-
-    public void SetUpSlider(int max, int value)
-    {
-        lapSlider.maxValue = max;
-        lapSlider.value = value;
-    }
-
-    public void SetLapValue(int value)
-    {
-        lapSlider.value = value;
-    }
-
-    #endregion
-
-
 
     public void BlackScreenFadeIn()
     {
-
+        blackScreenGroup.DOFade(1, fadeTime);
     }
 
     public void BlackScreenFadeOut()
     {
-        
+        blackScreenGroup.DOFade(0, fadeTime);
     }
 
+
+    
 }

@@ -13,13 +13,13 @@ public class PlayerInteractionManager : MonoBehaviour
         Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, interactionDistance,~ignoreLayers))
+        if (Physics.Raycast(ray, out hit,interactionDistance,~ignoreLayers))
         {
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
 
             if (interactable != null)
             {
-                if (interactable != currentInteractable)
+                if (interactable != currentInteractable && interactable.GetInteractDestance()>= hit.distance)
                 {
                     if (currentInteractable != null)
                         currentInteractable.OnPointerExit();

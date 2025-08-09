@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TeleportPoint : MonoBehaviour, IInteractable
@@ -10,6 +9,8 @@ public class TeleportPoint : MonoBehaviour, IInteractable
     public Vector3 meshMaxSize = Vector3.one * 1.2f;
 
 
+    [Tooltip("From how far player can interact with it")]
+    [SerializeField] float interactDistance = 10f;
     [SerializeField] bool canInteract = true;
     [SerializeField] Transform playerPoint;
 
@@ -57,6 +58,10 @@ public class TeleportPoint : MonoBehaviour, IInteractable
     }
 
     #region Interface
+    public float GetInteractDestance()
+    {
+        return interactDistance;
+    }
 
     public void Init()
     {

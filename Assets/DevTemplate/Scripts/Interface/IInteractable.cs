@@ -7,6 +7,7 @@ public interface IInteractable
     public void Init();
     public void OnPointerEnter();
     public void OnPointerExit();
-    public void OnInteract();    
+    public void OnInteract();
+    public float GetInteractDestance();    
     
 }

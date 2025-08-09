@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Init()
     {
+        EventManager.Init?.Invoke();
         foreach (IInteractable item in interactBases) item.Init();
 
         Invoke(nameof(StartSimulation), 2f);
